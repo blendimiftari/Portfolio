@@ -14,7 +14,7 @@ export default function Socials() {
             rel="noopener noreferrer"
           >
             <span class="sr-only">GitHub</span>
-            <FaGithub size={30} />
+            <FaGithub size={24} />
           </a>
         </li>
         <li class="mr-5 text-xs shrink-0">
@@ -25,7 +25,7 @@ export default function Socials() {
             rel="noopener noreferrer"
           >
             <span class="sr-only">LinkedIn</span>
-            <FaLinkedin size={30} />
+            <FaLinkedin size={24} />
           </a>
         </li>
         <li class="mr-5 text-xs shrink-0">
@@ -39,7 +39,7 @@ export default function Socials() {
             rel="noopener noreferrer"
           >
             <span class="sr-only">Facebook</span>
-            <FaFacebook size={30} />
+            <FaFacebook size={24} />
           </a>
         </li>
         <li class="mr-5 text-xs shrink-0">
@@ -50,7 +50,7 @@ export default function Socials() {
             rel="noopener noreferrer"
           >
             <span class="sr-only">Instagram</span>
-            <FaInstagram size={30} />
+            <FaInstagram size={24} />
           </a>
         </li>
       </ul>

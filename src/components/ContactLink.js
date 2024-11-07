@@ -10,7 +10,7 @@ export default function ContactLink() {
       className="block text-paragraph hover:text-textPrimary"
     >
       <span class="sr-only">Gmail</span>
-      <FaGoogle size={30} />
+      <FaGoogle size={24} />
     </a>
   )
 }

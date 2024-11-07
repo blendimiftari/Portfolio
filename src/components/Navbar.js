@@ -7,17 +7,15 @@ function Navbar() {
   useEffect(() => {
     const options = {
       root: null,
-      rootMargin: "-30% 0px -30px 0px",
-      threshold: 0.2,
+      rootMargin: "-10% 0px -30px 0px",
+      threshold: 0.1,
     }
 
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          // Set the section as active when it comes into view
           setActiveSection(entry.target.id)
         } else if (activeSection === entry.target.id) {
-          // If the section is not visible and it is currently active, reset it
           setActiveSection("")
         }
       })
@@ -29,7 +27,7 @@ function Navbar() {
     return () => {
       sections.forEach(section => observer.unobserve(section))
     }
-  }, [activeSection]) // Include activeSection in the dependency array to handle updates
+  }, [activeSection])
 
   const navItems = [
     { id: "about", label: "About" },
@@ -45,21 +43,21 @@ function Navbar() {
             <Link
               to={item.id}
               offset={-50}
-              className={`cursor-pointer group flex items-center py-3 ${
+              className={`text-xs cursor-pointer group flex items-center py-3 ${
                 activeSection === item.id
                   ? "text-textPrimary"
                   : "text-paragraph"
               }`}
             >
               <span
-                className={`nav-indicator mr-4 h-px w-8 transition-all ${
+                className={`text-xs nav-indicator mr-4 h-px transition-all ${
                   activeSection === item.id
                     ? "w-16 bg-textPrimary"
-                    : "bg-paragraph group-hover:w-16 group-hover:bg-textPrimary"
+                    : "w-8 bg-paragraph group-hover:w-16 group-hover:bg-textPrimary"
                 }`}
               ></span>
               <span
-                className={`nav-text text-s font-bold uppercase tracking-widest ${
+                className={`text-xs nav-text font-bold uppercase tracking-widest ${
                   activeSection === item.id
                     ? "text-textPrimary"
                     : "text-paragraph group-hover:text-textPrimary"

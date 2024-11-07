@@ -92,7 +92,7 @@ export default function Main() {
     <div id="content" class=" lg:w-1/2 lg:py-12">
       <section
         id="about"
-        class=" pt-24 h-auto scroll-mt-16 md:mb-24 lg:mb-4 lg:scroll-mt-12"
+        class=" pt-16 h-auto scroll-mt-16 md:mb-24 lg:mb-4 lg:scroll-mt-12"
       >
         <div class="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
           <h2 class="text-xl font-bold uppercase tracking-widest text-textPrimary lg:sr-only">
@@ -100,7 +100,7 @@ export default function Main() {
           </h2>
         </div>
         <div>
-          <p class="mb-4 text-paragraph text-paragraphSize">
+          <p class="mb-4 text-paragraph text-base">
             Since my early days as a computer science student, I’ve been
             passionate about learning and growing in software engineering. I aim
             to bridge the gap between theory and real-world problem-solving,
@@ -108,7 +108,7 @@ export default function Main() {
             project is an opportunity to deepen my understanding and expand my
             skills.
           </p>
-          <p class="mb-4 text-paragraph text-paragraphSize">
+          <p class="mb-4 text-paragraph text-base">
             I’m all about collaboration and creating a supportive team vibe. I
             believe success comes from building strong relationships and helping
             each other out. I’m constantly growing, both professionally and
@@ -116,7 +116,7 @@ export default function Main() {
             My goal is to create a space where everyone feels encouraged,
             empowered, and ready to thrive.
           </p>
-          <p class="mb-4 text-paragraph text-paragraphSize">
+          <p class="mb-4 text-paragraph text-base">
             When I’m not coding, you’ll find me enjoying sports, movies, NBA,
             football, and chess. These hobbies help me stay focused, balanced,
             and continuously grow as a developer and individual.
@@ -157,12 +157,12 @@ export default function Main() {
           href="https://drive.google.com/file/d/1kqy-31_Uut2hJuqYD9n569f1iJ3qBO_W/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
-          className="group inline-flex ml-6 text-2xl hover:text-violet-300 font-bold text-textPrimary"
+          className="group inline-flex ml-6 text-base hover:text-violet-300 font-bold text-textPrimary"
         >
           View Full Resume
           <MdArrowOutward
             className="ml-1 mt-2 transform transition-transform duration-200 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-1 "
-            size={20}
+            size={16}
           />
         </a>
       </section>
