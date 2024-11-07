@@ -15,6 +15,7 @@ export default function Card({
       {img ? (
         <div className="sm:col-span-2">
           <img
+            alt=""
             src={img}
             className="rounded-md border-4 border-gray-600 object-cover w-40 h-24"
           />
