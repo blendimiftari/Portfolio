@@ -4,7 +4,7 @@ import Socials from "./Socials"
 
 export default function Header() {
   return (
-    <div class=" md:sticky top-0 flex max-h-screen w-1/2 flex-col py-32">
+    <div class=" lg:sticky top-0 flex max-h-screen w-1/2 flex-col py-32">
       <Hero />
     </div>
   )
